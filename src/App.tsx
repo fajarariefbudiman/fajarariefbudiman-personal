@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { useState, useEffect } from "react";
+import AutoChartGenerator from "./pages/AutoChartGenerator";
 
 const queryClient = new QueryClient();
 
@@ -24,22 +25,20 @@ const App = () => {
         <Toaster />
         <Sonner />
 
-        {!visited ? (
+        {/* {!visited ? (
           <WelcomeScreen onFinish={() => setVisited(true)} />
-        ) : (
-          <BrowserRouter>
-            <Routes>
-              <Route
-                path="/"
-                element={<Index />}
-              />
-              <Route
-                path="*"
-                element={<NotFound />}
-              />
-            </Routes>
-          </BrowserRouter>
-        )}
+        ) : ( */}
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Index />} />
+            <Route
+              path='/portfolio/auto-chart-generator'
+              element={<AutoChartGenerator />}
+            />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+        {/* )} */}
       </TooltipProvider>
     </QueryClientProvider>
   );
