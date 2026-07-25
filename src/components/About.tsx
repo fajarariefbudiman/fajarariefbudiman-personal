@@ -158,7 +158,7 @@ export const About = () => {
 
             {/* Download Resume */}
             <a
-              href='/resume/cv-fajar-arief-software-developer.pdf'
+              href='/resume/cv-fajar.pdf'
               download
               className='inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-6 rounded-lg font-semibold'
             >
