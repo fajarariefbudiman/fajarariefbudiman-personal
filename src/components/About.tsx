@@ -58,6 +58,13 @@ const softSkills = [
 export const About = () => {
   const { t, language } = useLanguage();
 
+  // CV filename & path differ by active language
+  const resumeFileName =
+    language === "id"
+      ? "CV_Fajar_Arief_Budiman_Fullstack.pdf"
+      : "CV_Fajar_Arief_Fullstack.pdf";
+  const resumeHref = `/resume/${resumeFileName}`;
+
   return (
     <section id='about' className='py-20 px-4 bg-muted/30'>
       <div className='container mx-auto max-w-6xl'>
@@ -156,10 +163,10 @@ export const About = () => {
               </>
             )}
 
-            {/* Download Resume */}
+            {/* Download Resume — filename & path follow active language */}
             <a
-              href='/resume/cv-fajar.pdf'
-              download
+              href={resumeHref}
+              download={resumeFileName}
               className='inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-6 rounded-lg font-semibold'
             >
               <Download className='h-5 w-5' />
