@@ -26,8 +26,8 @@ const journey: JourneyItem[] = [
     },
     org: "Universitas Pamulang",
     desc: {
-      id: "Mulai kuliah Informatika sambil belajar fundamental pemrograman secara otodidak — dari sinilah ketertarikan pada backend engineering dimulai.",
-      en: "Began Informatics Engineering studies while self-teaching programming fundamentals — this is where the interest in backend engineering started.",
+      id: "Mulai kuliah Informatika sambil belajar fundamental pemrograman secara otodidak, dari sinilah ketertarikan pada backend engineering dimulai.",
+      en: "Began Informatics Engineering studies while self-teaching programming fundamentals, this is where the interest in backend engineering started.",
     },
   },
   {
@@ -78,8 +78,8 @@ const journey: JourneyItem[] = [
     },
     org: "DiGiat Group",
     desc: {
-      id: "Merancang dan merilis dua aplikasi mobile gratis di bawah DiGiat Group — Navila untuk keuangan pasangan & wedding planner, dan Kurva sebagai kasir digital untuk UMKM.",
-      en: "Designed and shipped two free mobile apps under DiGiat Group — Navila for couple finance & wedding planning, and Kurva as a digital point-of-sale for SMEs.",
+      id: "Merancang dan merilis dua aplikasi mobile gratis di bawah DiGiat Group, Navila untuk keuangan pasangan & wedding planner, dan Kurva sebagai kasir digital untuk UMKM.",
+      en: "Designed and shipped two free mobile apps under DiGiat Group, Navila for couple finance & wedding planning, and Kurva as a digital point-of-sale for SMEs.",
     },
   },
 ];
