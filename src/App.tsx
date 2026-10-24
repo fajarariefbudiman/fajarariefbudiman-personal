@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { useState, useEffect } from "react";
 import AutoChartGenerator from "./pages/AutoChartGenerator";
+import FajarAnalyticsTracker from "./components/FajarAnalyticsTracker";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => {
           <WelcomeScreen onFinish={() => setVisited(true)} />
         ) : ( */}
         <BrowserRouter>
+          <FajarAnalyticsTracker />
           <Routes>
             <Route path='/' element={<Index />} />
             <Route
